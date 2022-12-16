@@ -1,0 +1,32 @@
+<section class="container">
+   <header class="header d-flex">
+      <h2 class="ff-inter">Meu Mural</h2>
+      <button routerLink="/criarPensamento" class="botao">Adicionar Pensamento</button>
+      <!--router link diretiva esse elemento se torna um link e faz a navegação para uma rota especifica -->
+   </header>
+   <div class="mural" *ngIf="listaPensamentos.length > 0, else semPensamentos">
+    <div *ngFor="let pensamento of listaPensamentos">
+      <app-pensamento [pensamento]="pensamento"></app-pensamento>
+    </div>
+
+   </div>
+</section>
+<ng-template #semPensamentos>
+    <div class="ff-inter sem-pensamentos">
+      <p>Ainda não há pensamentos cadastrados</p>
+    </div>
+</ng-template>
+
+
+<!--quando queremos mostrar varios elementos com a mesma estrutura basica ou quando iterar uma lista de elementos usamos uma estrutura de repetição
+diretiva ngFor
+*ngFor="let pensamento(representa cada um dos elementos da lista) of listaPensamentos" quero iterar pela lista de pensamentos e cada elemento da lista de pensamentos vai ser um pensamento
+//[pensamento]="pensamento" fazendo property binding dessa propriedade[pensamento] para que recebe a propriedade que você quer
+
+
+O “*ngFor” permite percorrer um array e exibir cada item como elemento no template.
+
+
+A sintaxe é composta por uma variável local que recebe o valor de cada item percorrido seguido de qual será o array ou objeto iterável.
+
+-->

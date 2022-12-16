@@ -1,0 +1,18 @@
+ <div class="pensamento {{ pensamento.modelo }} ff-roboto-mono" [ngClass]="larguraPensamento()">
+    <img src="../../../../assets/imagens/{{ pensamento.modelo }}.png" alt="Aspas Coloridas">
+    <p class="conteudo">{{ pensamento.conteudo }}</p>
+    <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
+
+    <div class="acoes">
+        <button class="botao-editar">
+          <img src="../../../../assets/imagens/icone-editar.png" routerLink="/pensamentos/editarPensamento/{{pensamento.id}}" alt="Icone de editar">
+        </button>
+        <button class="botao-excluir" routerLink="/pensamentos/excluirPensamento/{{pensamento.id}}">
+          <img src="../../../../assets/imagens/icone-excluir.png" alt="Icone de excluir">
+        </button>
+    </div>
+ </div>
+
+ <!--interpolação para renderizar o modelo que eu criei na classe typeScript aqui no html
+ngclass estamos delegando classe typeScript para conseguir estilos de forma dinamica
+-->
