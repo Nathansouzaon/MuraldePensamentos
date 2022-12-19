@@ -1,0 +1,4 @@
+Acionar uma função no componente quando se deseja aplicar o comportamento de recarregar. Essa função deverá passar para a propriedade onSameUrlNavigation o valor reload: this.router.onSameUrlNavigation = 'reload' fornecer um RouteReuseStrategy que retorna ‘false’ para shouldReuseRoute, this.router.routeReuseStrategy.shouldReuseRoute = () => false e então navegar para a rota através do serviço Router e do método navigate this.router.navigate([this.router.url]).
+
+
+A classe Router é um serviço que fornece navegação entre as views e também recursos de manipulação de URL. Por padrão, o roteador reutiliza uma instância de componente quando navega novamente para o mesmo tipo de componente sem visitar um componente diferente primeiro. Para recarregar componentes roteados na mesma navegação de url, você precisa definir a propriedade onSameUrlNavigation com o valor 'reload' e fornecer um RouteReuseStrategy que retorna ‘false’ para shouldReuseRoute

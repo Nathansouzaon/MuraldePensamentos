@@ -29,3 +29,9 @@ O HttpClient retorna Observable das chamadas de métodos HTTP, o que facilita na
 
 
 HttpClient é uma classe que possui envia requisições HTTP e permite interagir com os suas diferentes possibilidades de resultados.
+
+
+comando para executar o json serve
+json-server --watch db.json  
+
+O método put() constrói um observable que, quando inscrito, faz com que a solicitação configurada seja executada no servidor. Esse método substitui um recurso existente por um novo conjunto de valores e por isso, utilizamos o put quando queremos atualizar um pensamento.

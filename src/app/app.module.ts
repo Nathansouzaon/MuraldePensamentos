@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 import { PensamentoComponent } from "./componentes/pensamentos/pensamento/pensamento.component";
 import { HttpClientModule } from '@angular/common/http';
 import { ExcluirPensamentoComponent } from './componentes/pensamentos/excluir-pensamento/excluir-pensamento.component';
 import { EditarPensamentoComponent } from './componentes/pensamentos/editar-pensamento/editar-pensamento.component';
+import { BotaoCarregarMaisComponent } from './componentes/pensamentos/listar-pensamento/botao-carregar-mais/botao-carregar-mais.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { EditarPensamentoComponent } from './componentes/pensamentos/editar-pens
         ListarPensamentoComponent,
         PensamentoComponent,
         ExcluirPensamentoComponent,
-        EditarPensamentoComponent
+        EditarPensamentoComponent,
+        BotaoCarregarMaisComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -30,7 +32,8 @@ import { EditarPensamentoComponent } from './componentes/pensamentos/editar-pens
         BrowserModule,
         AppRoutingModule,
         FormsModule,
-        HttpClientModule
+        HttpClientModule,
+        ReactiveFormsModule
     ]
 })
 export class AppModule { }

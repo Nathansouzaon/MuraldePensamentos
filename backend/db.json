@@ -1,3 +1,67 @@
 {
-  "pensamentos": []
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "estou sem duvidas",
+      "autoria": "nathan souza",
+      "modelo": "modelo3",
+      "favorito": false
+    },
+    {
+      "conteudo": "aprender angular",
+      "autoria": "nathan souza",
+      "modelo": "modelo1",
+      "favorito": false,
+      "id": 2
+    },
+    {
+      "conteudo": "eu amo ser programador",
+      "autoria": "nathan souza",
+      "modelo": "modelo1",
+      "favorito": true,
+      "id": 3
+    },
+    {
+      "conteudo": "eu amo minha esposa",
+      "autoria": "nathan souza",
+      "modelo": "modelo1",
+      "favorito": false,
+      "id": 4
+    },
+    {
+      "conteudo": "testando httpparams",
+      "autoria": "nathan souza",
+      "modelo": "modelo1",
+      "favorito": false,
+      "id": 5
+    },
+    {
+      "conteudo": "eu sou o melhor ",
+      "autoria": "nathan souza",
+      "modelo": "modelo1",
+      "favorito": false,
+      "id": 6
+    },
+    {
+      "conteudo": "pensamento teste",
+      "autoria": "nathan souza",
+      "modelo": "modelo1",
+      "favorito": false,
+      "id": 7
+    },
+    {
+      "conteudo": "guardiao da star",
+      "autoria": "mestre yoda",
+      "modelo": "modelo3",
+      "favorito": false,
+      "id": 8
+    },
+    {
+      "conteudo": "sou programador",
+      "autoria": "dev",
+      "modelo": "modelo3",
+      "favorito": true,
+      "id": 9
+    }
+  ]
 }
